@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LuvPod</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <!-- Logo -->
+        <div class="flex-shrink-0 text-xl font-bold text-pink-600">
+          LuvPod
+        </div>
+
+        <!-- Menu button for mobile -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-gray-700 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Nav Links -->
+        <div id="menu" class="hidden md:flex space-x-8 text-gray-800 font-medium">
+          <a href="#" class="hover:text-pink-600">Home</a>
+          <a href="#" class="hover:text-pink-600">Products</a>
+          <a href="#" class="hover:text-pink-600">How It Works</a>
+          <a href="#" class="hover:text-pink-600">Testimonials</a>
+          <a href="#" class="hover:text-pink-600">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="#" class="block py-2 text-gray-800 hover:text-pink-600">Home</a>
+      <a href="#" class="block py-2 text-gray-800 hover:text-pink-600">Products</a>
+      <a href="#" class="block py-2 text-gray-800 hover:text-pink-600">How It Works</a>
+      <a href="#" class="block py-2 text-gray-800 hover:text-pink-600">Testimonials</a>
+      <a href="#" class="block py-2 text-gray-800 hover:text-pink-600">Contact</a>
+    </div>
+  </nav>
+
+  <script>
+    // Toggle menu
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
+
+  <!-- Hero Section -->
+  <section class="bg-pink-50 bg-[radial-gradient(circle,_rgba(255,192,203,0.3)_1px,_transparent_1px)] [background-size:20px_20px]">
+    <div class="max-w-7xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-center">
+      
+      <!-- Left Content -->
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+          Preserve Your Precious <br /> Memories Forever
+        </h1>
+        <p class="text-gray-600 text-lg mb-8">
+          Store your cherished photos, videos, notes, and voice recordings in our beautiful digital gift capsules. The perfect present for loved ones.
+        </p>
+        <div class="flex gap-4">
+          <a href="#" class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-6 rounded-lg shadow">
+            Shop Capsules
+          </a>
+          <a href="#" class="border-2 border-pink-300 text-pink-500 font-semibold py-3 px-6 rounded-lg hover:bg-pink-100">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Card -->
+      <div class="flex justify-center">
+        <div class="bg-white rounded-xl shadow-lg p-8 text-center w-64">
+          <div class="text-pink-500 text-5xl mb-4">🔒</div>
+          <h3 class="font-bold text-lg">LuvPod</h3>
+          <p class="text-pink-500 text-sm">Store memories forever</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+
+<!-- Why Choose Us Section -->
+<section class="bg-white py-20">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+      Why Choose Our Memory Capsules?
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- Feature 1 -->
+      <div class="bg-pink-100 rounded-xl p-8 text-center shadow hover:shadow-lg transition">
+        <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <span class="text-pink-500 text-2xl">☁️</span>
+        </div>
+        <h3 class="text-lg font-bold text-gray-800 mb-2">Cloud Storage</h3>
+        <p class="text-gray-600 text-sm">
+          Securely store your memories in the cloud with various storage options to fit your needs.
+        </p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="bg-pink-100 rounded-xl p-8 text-center shadow hover:shadow-lg transition">
+        <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <span class="text-pink-500 text-2xl">🌸</span>
+        </div>
+        <h3 class="text-lg font-bold text-gray-800 mb-2">Beautiful Interface</h3>
+        <p class="text-gray-600 text-sm">
+          Elegant and intuitive design makes it easy to create, view, and share your memories.
+        </p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="bg-pink-100 rounded-xl p-8 text-center shadow hover:shadow-lg transition">
+        <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <span class="text-pink-500 text-2xl">🔒</span>
+        </div>
+        <h3 class="text-lg font-bold text-gray-800 mb-2">Secure Access</h3>
+        <p class="text-gray-600 text-sm">
+          Control who can view your memories with our secure sharing options.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="bg-pink-50 py-20">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Memory Capsules</h2>
+    <p class="text-gray-600 mb-12">
+      Choose the perfect capsule based on your storage needs and how long you want<br class="hidden md:block" />
+      to preserve your memories.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- Basic Capsule -->
+      <div class="bg-white rounded-xl shadow p-6 text-center">
+        <div class="bg-pink-200 rounded-t-xl py-4 text-lg font-bold text-white" style="background-color: #FBA4B2;">
+          Basic Capsule
+        </div>
+        <div class="text-3xl font-bold mt-6 mb-1">₹49 <span class="text-base font-medium text-gray-600">/year</span></div>
+        <ul class="text-sm text-gray-700 text-left mt-6 space-y-3 px-6">
+          <li>✅ 5GB Storage</li>
+          <li>✅ 1 Year Validity</li>
+          <li>✅ Photos & Text Notes</li>
+          <li>✅ Share with 5 people</li>
+        </ul>
+        <button class="mt-6 bg-pink-300 hover:bg-pink-400 text-white font-semibold py-2 px-6 rounded-lg w-full">
+          Choose Basic
+        </button>
+      </div>
+
+      <!-- Premium Capsule -->
+      <div class="bg-white rounded-xl shadow p-6 text-center border-4 border-pink-400">
+        <div class="bg-pink-400 rounded-t-xl py-4 text-lg font-bold text-white relative">
+          Premium Capsule
+          <span class="absolute top-0 right-0 bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded-bl">POPULAR</span>
+        </div>
+        <div class="text-3xl font-bold mt-6 mb-1">₹99 <span class="text-base font-medium text-gray-600">/year</span></div>
+        <ul class="text-sm text-gray-700 text-left mt-6 space-y-3 px-6">
+          <li>✅ 20GB Storage</li>
+          <li>✅ 5 Years Validity</li>
+          <li>✅ Photos, Videos & Voice Notes</li>
+          <li>✅ Share with 20 people</li>
+          <li>✅ Custom Gift Packaging</li>
+        </ul>
+        <button class="mt-6 bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-6 rounded-lg w-full">
+          Choose Premium
+        </button>
+      </div>
+
+      <!-- Forever Capsule -->
+      <div class="bg-white rounded-xl shadow p-6 text-center">
+        <div class="bg-pink-200 rounded-t-xl py-4 text-lg font-bold text-white" style="background-color: #FBA4B2;">
+          Forever Capsule
+        </div>
+        <div class="text-3xl font-bold mt-6 mb-1">₹149 <span class="text-base font-medium text-gray-600">/lifetime</span></div>
+        <ul class="text-sm text-gray-700 text-left mt-6 space-y-3 px-6">
+          <li>✅ 50GB Storage</li>
+          <li>✅ Lifetime Validity</li>
+          <li>✅ All Media Types</li>
+          <li>✅ Unlimited Sharing</li>
+          <li>✅ Premium Gift Box</li>
+        </ul>
+        <button class="mt-6 bg-pink-300 hover:bg-pink-400 text-white font-semibold py-2 px-6 rounded-lg w-full">
+          Choose Forever
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="bg-white py-20">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">How It Works</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+      
+      <!-- Step 1 -->
+      <div>
+        <div class="w-16 h-16 mx-auto mb-4 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center text-xl font-bold">1</div>
+        <h3 class="font-semibold text-lg text-gray-900 mb-2">Choose Your Capsule</h3>
+        <p class="text-sm text-gray-600">
+          Select the perfect capsule based<br />
+          on your storage needs and validity<br />
+          period.
+        </p>
+      </div>
+
+      <!-- Step 2 -->
+      <div>
+        <div class="w-16 h-16 mx-auto mb-4 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center text-xl font-bold">2</div>
+        <h3 class="font-semibold text-lg text-gray-900 mb-2">Upload Memories</h3>
+        <p class="text-sm text-gray-600">
+          Add photos, videos, text notes, and<br />
+          voice recordings to your capsule.
+        </p>
+      </div>
+
+      <!-- Step 3 -->
+      <div>
+        <div class="w-16 h-16 mx-auto mb-4 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center text-xl font-bold">3</div>
+        <h3 class="font-semibold text-lg text-gray-900 mb-2">Customize Access</h3>
+        <p class="text-sm text-gray-600">
+          Decide who can view your<br />
+          memories and how they can<br />
+          interact with them.
+        </p>
+      </div>
+
+      <!-- Step 4 -->
+      <div>
+        <div class="w-16 h-16 mx-auto mb-4 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center text-xl font-bold">4</div>
+        <h3 class="font-semibold text-lg text-gray-900 mb-2">Gift or Keep</h3>
+        <p class="text-sm text-gray-600">
+          Give as a thoughtful gift or keep for<br />
+          yourself to preserve special moments.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- See How It Works Section -->
+<section class="bg-pink-100 py-20">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10">
+    
+    <!-- Text Content -->
+    <div class="md:w-1/2">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">See <span class="text-pink-600">How It Works</span></h2>
+      <p class="text-gray-700 mb-6 text-base md:text-lg">
+        Our memory capsules are designed to be beautiful, intuitive, and easy to use.
+        Watch our demo to see how you can create and share your own digital memories.
+      </p>
+      <button class="flex items-center gap-2 bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-md font-semibold transition">
+        <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        Watch Demo
+      </button>
+    </div>
+
+    <!-- Video Placeholder -->
+    <div class="md:w-1/2">
+      <div class="bg-gray-200 rounded-xl shadow-lg p-2">
+        <div class="w-full h-60 md:h-72 bg-gray-300 rounded-lg flex items-center justify-center relative">
+          <div class="w-14 h-14 bg-pink-400 rounded-full flex items-center justify-center shadow-lg cursor-pointer">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="bg-white py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+      What Our Customers Say
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Testimonial 1 -->
+      <div class="bg-pink-100 rounded-xl p-6 shadow-sm">
+        <div class="text-yellow-500 mb-3 text-lg">★★★★★</div>
+        <p class="text-gray-800 mb-6">
+          "I created a memory capsule for my parents' 50th anniversary. They were moved to tears when they saw all the family photos and video messages I had collected. Worth every penny!"
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 bg-pink-400 text-white rounded-full flex items-center justify-center font-bold">
+            N
+          </div>
+          <div>
+            <p class="font-semibold text-gray-900">Neeraj Kumar</p>
+            <p class="text-sm text-gray-600">Premium Capsule User</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-pink-100 rounded-xl p-6 shadow-sm">
+        <div class="text-yellow-500 mb-3 text-lg">★★★★★</div>
+        <p class="text-gray-800 mb-6">
+          "I bought the Forever Capsule for my newborn daughter. I'm adding photos and videos as she grows, and I love that I can include voice notes telling her how much she means to me. This will be priceless when she's older."
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 bg-pink-400 text-white rounded-full flex items-center justify-center font-bold">
+            S
+          </div>
+          <div>
+            <p class="font-semibold text-gray-900">Shreya</p>
+            <p class="text-sm text-gray-600">Forever Capsule User</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-pink-100 rounded-xl p-6 shadow-sm">
+        <div class="text-yellow-500 mb-3 text-lg">★★★★★</div>
+        <p class="text-gray-800 mb-6">
+          "Our wedding guests contributed photos and messages to our Wedding Capsule. It’s like having a digital guest book that includes videos and voice messages. So much more personal than just photos!"
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 bg-pink-400 text-white rounded-full flex items-center justify-center font-bold">
+            A
+          </div>
+          <div>
+            <p class="font-semibold text-gray-900">Anisha & Ritik</p>
+            <p class="text-sm text-gray-600">Premium Capsule Users</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="bg-pink-100 py-20">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+    
+    <!-- Left Side -->
+    <div class="bg-pink-500 text-white rounded-xl p-8 shadow-md">
+      <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+      <p class="mb-6">Have questions about our memory capsules? We're here to help! Reach out to our team.</p>
+      
+      <div class="space-y-4">
+        <p class="flex items-center gap-3">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M16 12H8m8 0l-4 4m4-4l-4-4"></path>
+          </svg>
+          support@memorycapsule.com
+        </p>
+        <p class="flex items-center gap-3">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 5a2 2 0 012-2h1.5a2 2 0 011.79 1.11l1.18 2.36a2 2 0 001.78 1.11H18a2 2 0 012 2v2.5a2 2 0 01-1.11 1.79l-2.36 1.18a2 2 0 00-1.11 1.78V19a2 2 0 01-2 2h-2.5a2 2 0 01-1.79-1.11l-1.18-2.36a2 2 0 00-1.78-1.11H6a2 2 0 01-2-2V5z" />
+          </svg>
+          +1 (555) 123-4567
+        </p>
+        <p class="flex items-center gap-3">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M17.657 16.657L13.414 12l4.243-4.243M6.343 7.343L10.586 12l-4.243 4.243" />
+          </svg>
+          123 Memory Lane<br>San Francisco, CA 94103
+        </p>
+      </div>
+
+      <div class="mt-6">
+        <h3 class="font-semibold mb-2">Follow Us</h3>
+        <div class="flex gap-4">
+          <a href="#" class="w-9 h-9 bg-white text-pink-500 rounded-full flex items-center justify-center hover:bg-gray-200">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="w-9 h-9 bg-white text-pink-500 rounded-full flex items-center justify-center hover:bg-gray-200">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="w-9 h-9 bg-white text-pink-500 rounded-full flex items-center justify-center hover:bg-gray-200">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side -->
+    <div class="bg-white rounded-xl p-8 shadow-md">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+      <form class="space-y-5">
+        <input type="text" placeholder="Your Name" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400" />
+        <input type="email" placeholder="Email Address" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400" />
+        <input type="text" placeholder="Subject" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400" />
+        <textarea placeholder="Message" rows="4" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400"></textarea>
+        <button type="submit" class="w-full bg-pink-400 text-white font-semibold py-2 rounded-md hover:bg-pink-500 transition">
+          Send Message
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<body class="bg-gray-900 text-white">
+
+  <footer class="bg-gray-900 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Logo + About -->
+      <div>
+        <div class="flex items-center mb-4">
+          <span class="text-pink-400 text-2xl mr-2">
+            <i class="fas fa-lock"></i>
+          </span>
+          <span class="text-xl font-semibold">MemoryCapsule</span>
+        </div>
+        <p class="text-sm text-gray-300">
+          Preserving your precious memories<br />
+          in beautiful digital time capsules.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="font-semibold mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li><a href="#" class="hover:text-pink-400">Home</a></li>
+          <li><a href="#" class="hover:text-pink-400">Products</a></li>
+          <li><a href="#" class="hover:text-pink-400">How It Works</a></li>
+          <li><a href="#" class="hover:text-pink-400">Testimonials</a></li>
+          <li><a href="#" class="hover:text-pink-400">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <h3 class="font-semibold mb-4">Legal</h3>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li><a href="#" class="hover:text-pink-400">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-pink-400">Terms of Service</a></li>
+          <li><a href="#" class="hover:text-pink-400">Refund Policy</a></li>
+          <li><a href="#" class="hover:text-pink-400">Cookie Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div>
+        <h3 class="font-semibold mb-4">Newsletter</h3>
+        <p class="text-sm text-gray-300 mb-4">
+          Subscribe to get updates on new features and promotions.
+        </p>
+        <form class="flex rounded overflow-hidden">
+          <input type="email" placeholder="Your email"
+                 class="w-full px-4 py-2 text-gray-900 focus:outline-none" />
+          <button type="submit"
+                  class="bg-pink-400 px-4 flex items-center justify-center">
+            <i class="fas fa-arrow-right text-white"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
+      © 2025 LuvPod. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
